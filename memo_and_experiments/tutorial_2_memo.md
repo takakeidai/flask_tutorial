@@ -1,15 +1,17 @@
 # The Application Factory
 
-Tutorial 2：The Application Factory
-Flaskクラスのappインスタンスの生成方法
-※ 作業ディレクトリ：flaskr/__init__.py
+Tutorial 2：The Application Factory<br>
+Flaskクラスのappインスタンスの生成方法<br>
+※ 作業ディレクトリ：flaskr/__init__.py<br>
 
 
-## __init__.pyファイルの役割は2つ
-1つ目は、application factoryコードが書かれている。これにflaskのインスタンスを生成することができる。
-2つ目は、__init__.pyよりflaskrディレクトリがパッケージの役割を果たすことができる。
-スクリプトファイルがモジュールで、スクリプトファイルが格納されているディレクトリがパッケージ
-パッケージ用のディレクトリに__init__.pyをおくのが標準的で、そのようなパッケージを正規パッケージという。
+## __init__.pyファイルの役割
+__init_,pyファイルの役割は主に2つ。<br>
+1つ目は、application factoryコードが書かれており、これによってflaskのインスタンスを生成することができる。<br>
+2つ目は、__init__.pyによって、flaskrディレクトリがパッケージの役割を果たすことができる。<br>
+ちなみに、<br>
+スクリプトファイルがモジュールで、スクリプトファイルが格納されているディレクトリがパッケージ<br>
+パッケージ用のディレクトリに__init__.pyをおくのが標準的で、そのようなパッケージを正規パッケージという。<br>
 
 
 ## コード
