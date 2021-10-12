@@ -1,0 +1,35 @@
+
+ここでは各チュートリアルごとで得た気づきや学習、解消されていない疑問点とその解答を順次載せていく。
+
+・ファイルのパスについて
+The Application Factory：osライブラリ
+import os
+全体のパス
+/Users/home/workspace/kota_training/projects/flask_tutorial/drafts/os_library.py
+現在、ターミナルでpwdとすると、/Users/home/workspace/kota_training/projects/flask_tutorial　となる。
+つまり、現在のディレクトリはflask_tutorial
+そして、flask_tutorialディレクトリにいながら、os_libraryモジュールに書かれている以下のコードを実行すると、
+IN：print(os.getcwd())
+OUT：/Users/home/workspace/kota_training/projects/flask_tutorial
+次に、cd draftsとして、draftsディレクトリに移動する。
+その後、同様のコードを実行する。
+IN：print(os.getcwd())
+OUT：/Users/home/workspace/kota_training/projects/flask_tutorial/drafts
+つまりどのディレクトリにいてもファイルを実行できるが、いる場所によって作業ディレクトリは異なる。
+
+・ルーティングについて
+ベースのURLへファイル構造に当たる部分を付け加えたもの  = URL
+ファイル構造のみの部分 = URI = ドメイン
+例) http://example.com
+
+今回の例だと、以下のコードによって、http://127.0.0.1:5000/helloに要求があった場合、Hello Worldを返せという命令が下る。
+@app.route('/hello')
+def hello():
+    return 'Hello, World!'
+
+ルーティングの役割は主に2つで、
+・まず、入ってくるリクエストが解析されて、ルートとそれに結び付けられたクエリ・パラメータに分解されます。
+クエリ・パラメーターとは：
+
+・そして、解析されたルートに対応する コントローラ・アクション がリクエストを処理するために生成されます。
+コントローラーアクションとは：
