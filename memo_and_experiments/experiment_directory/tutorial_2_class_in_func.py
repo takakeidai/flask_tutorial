@@ -8,7 +8,7 @@ create_app関数は、appインスタンスを返している。
 """
 
 
-# 関数からクラスを呼び出す方法
+# まずはクラスを作成する
 
 class Mid_twenties():
     def __init__(self, name, age, ismarry = True):
