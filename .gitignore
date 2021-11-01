@@ -139,5 +139,5 @@ cython_debug/
 
 venv/
 drafts/
-.DS_Store/
+.DS_Store
 
