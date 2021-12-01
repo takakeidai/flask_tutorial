@@ -36,6 +36,7 @@ def register():
 
         flash(error)
 
+    # POST以外、つまりGETだとif文を通らずにregiser.htmlが表示される。つまりサイトのURLにアクセスするとregister画面になる。
     return render_template('auth/register.html')
 
 
@@ -75,6 +76,7 @@ def load_logged_in_user():
         g.user = get_db().execute(
             'SELECT * FROM user WHERE id = ?', (user_id,)
         ).fetchone()
+
 
 @bp.route('/logout')
 def logout():
