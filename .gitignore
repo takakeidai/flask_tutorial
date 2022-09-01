@@ -1,0 +1,6 @@
+venv/
+drafts/
+.DS_Store
+__pycache__/
+memo_and_experiments/
+memo_and_experiments/
